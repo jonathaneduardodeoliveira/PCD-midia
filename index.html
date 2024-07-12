@@ -12,39 +12,37 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
+
+<!-- Style  -->
   
   <style>
   body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    
     }
-
-  
-  p 
+p 
   {text-align: justify;}
   .margin {margin-bottom: 45px;}
   
   .bg-1 { 
     background-color: #0d0e0d; /* Green */
     color: #ffffff;
-    margin: 50px;
-    
+    margin: 20px;
   }
   .bg-2 { 
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
-    margin: 50px;
+    margin: 20px;
   }
   .bg-3 { 
     background-color: #ffffff; /* White */
     color: #555555;
-    margin: 50px;
+    margin: 20px;
   }
   .bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
-    margin: 50px;
+    margin: 20px;
     
   }
   .container-fluid {
@@ -98,11 +96,12 @@
   </div>
 </nav>
 
-<!-- primeiro Container -->
-<div id="Quem Somos">
+<!-- Container (Quem Somos) -->
+
+<div id="Quem Somos" role="region" aria-labelledby="quem-somos">
 <div class="container-fluid bg-1 text-center">
-  <h1 class="margin">QUEM SOMOS?</h3>
-  <img src="img/Logo-pcd.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="200";>
+  <h1 class="margin">QUEM SOMOS?</h1>
+  <img src="img/Logo-pcd.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Imagem Logotipo" width="200";>
   <p style="text-align: justify;">A PCD Social Mídia é pioneira como a primeira empresa formada exclusivamente por pessoas com deficiência. Seus membros, todos alunos da escola profissionalizante PCD WEB, são verdadeiros especialistas em marketing digital e indo além, em desenvolvimento (full stack), preparados para atender às demandas do mercado.</p>
 
     <p style="text-align: justify;">No âmbito do marketing digital, a PCD Social Mídia oferece serviços como criação de santinhos digitais, vídeos exclusivos e gerenciamento de páginas nas redes sociais (Instagram, Telegram, Facebook e WhatsApp). Além disso, desenvolvem sites personalizados para empresas de diferentes portes, incluindo comércios em geral e MEIs, abrangendo também comércios digitais.</p>
@@ -110,10 +109,11 @@
 </div>
 </div>
 
-<!-- Segundo Container -->
-<div id="Nossos Valores">
+<!-- Container (Nossos Valores) -->
+
+<div id="Nossos Valores" role="region" aria-labelledby="nossos-valores">
 <div class="container-fluid bg-2 text-center">
-  <h2 class="margin">NOSSOS VALORES</h2>
+  <h1 class="margin">NOSSOS VALORES</h1>
   <p style="text-align: justify;">No mundo moderno em que a tecnologia se desenvolve de forma rápida, devemos aprender à acompanhar  todas essas mudanças de maneira  ágil e eficaz. </p>
 
   <p style="text-align: justify;">Por isso a PCD - SOCIAL MÍDIA, oferece seus serviços, seus colaboradores , seus equipamentos, conhecimento, e tecnologia; para desenvolver e alavancar o seu sonho, o seu objetivo de vida, sendo esse sonho na política, contribuindo para a nossa sociedade e nosso país.</p>
@@ -128,25 +128,26 @@
 </div>
 
 <!-- Container (Serviços) -->
-<div id="Serviços" class="container-fluid bg-3 text-center" style="background-color: black;">
-  <h2 style="color: white; margin: 50px;">SERVIÇOS</h2>
+
+<div id="Serviços" class="container-fluid bg-3 text-center" style="background-color: black;" role="region" aria-labelledby="servicos">
+  <h1 style="color: white; margin: 50px;">SERVIÇOS</h1>
   <br>
   <div class="row slideanim justify-content-center">
       <div class="col-sm-4" style="margin-bottom: 40px;">
           <span class="glyphicon glyphicon-user logo-small" style="font-size: 50px; color: #5cb85c;"></span>
-          <h4 class="text-muted" style="font-size: 25px; color: #fff;">Santinhos Digitais</h4>
-          <p2>Crie materiais de campanha digital personalizados, alcançando mais eleitores de forma prática e moderna.</p2>
+          <h2 class="text-muted" style="font-size: 25px; color: #fff;">Santinhos Digitais</h2>
+          <p2> Materiais de campanha digital personalizados, alcançando mais eleitores de forma prática e moderna.</p2>
       </div>
       
       <div class="col-sm-4" style="margin-bottom: 40px;">
           <span class="glyphicon glyphicon-film logo-small" style="font-size: 50px; color: #5cb85c;"></span>
-          <h4 class="text-muted" style="font-size: 25px; color: #fff;">Vídeos Exclusivos</h4>
-          <p2>Produza vídeos profissionais e exclusivos para destacar sua marca e engajar seu público.</p2>
+          <h2 class="text-muted" style="font-size: 25px; color: #fff;">Vídeos Exclusivos</h2>
+          <p2>  Vídeos profissionais e exclusivos para destacar sua marca e engajar seu público.</p2>
       </div>
       
       <div class="col-sm-4" style="margin-bottom: 40px;">
           <span class="glyphicon glyphicon-thumbs-up logo-small" style="font-size: 50px; color: #5cb85c;"></span>
-          <h4 class="text-muted" style="font-size: 25px; color: #fff;">Gerenciamento de Redes Sociais</h4>
+          <h2 class="text-muted" style="font-size: 25px; color: #fff;">Gerenciamento de Redes Sociais</h2>
           <p2>Amplie sua presença nas redes sociais com postagens estratégicas e interações que fortalecem a conexão com seus seguidores.</p2>
       </div>
   </div>
@@ -154,27 +155,29 @@
   <div class="row slideanim justify-content-center">
       <div class="col-sm-4" style="margin-bottom: 40px;">
           <span class="glyphicon glyphicon-globe logo-small" style="font-size: 50px; color: #5cb85c;"></span>
-          <h4 class="text-muted" style="font-size: 25px; color: #fff;">Desenvolvimento de Sites</h4>
-          <p2>Construa um site atraente e funcional, adaptado às necessidades do seu negócio e otimizado para conversões.</p2>
+          <h2 class="text-muted" style="font-size: 25px; color: #fff;">Desenvolvimento de Sites</h2>
+          <p2> Construa um site atraente e funcional, adaptado às necessidades do seu negócio e otimizado para conversões.</p2>
       </div>
       
       <div class="col-sm-4" style="margin-bottom: 40px;">
           <span class="glyphicon glyphicon-pushpin logo-small" style="font-size: 50px; color: #5cb85c;"></span>
-          <h4 class="text-muted" style="font-size: 25px; color: #fff;">Criação de Banners</h4>
-          <p2>Atraia a atenção com banners criativos e impactantes para campanhas publicitárias online e offline.</p2>
+          <h2 class="text-muted" style="font-size: 25px; color: #fff;">Criação de Banners</h2>
+          <p2> Atraia a atenção com banners criativos e impactantes para campanhas publicitárias online e offline.</p2>
       </div>
       
       <div class="col-sm-4" style="margin-bottom: 40px;">
           <span class="glyphicon glyphicon-signal logo-small" style="font-size: 50px; color: #5cb85c;"></span>
-          <h4 class="text-muted" style="font-size: 25px; color: #fff;">Analytics e Monitoramento</h4>
-          <p2>Acompanhe o desempenho das suas campanhas com análises detalhadas e monitoramento contínuo, otimizando resultados.</p2>
+          <h2 class="text-muted" style="font-size: 25px; color: #fff;">Analytics e Monitoramento</h2>
+          <p2> Acompanhe o desempenho das suas campanhas com análises detalhadas e monitoramento contínuo, otimizando resultados.</p2>
       </div>
   </div>
 </div>
 
-<div id="Contato" class="container-fluid bg-4 text-center" style="background-color: rgb(48, 3, 107); color: white;">
-  <img src="img/Logo.png" style="width: 15vw;" alt="">
-  <h4>Contato</h4>
+<!-- Contato -->
+
+<div id="Contato" class="container-fluid bg-4 text-center" style="background-color: rgb(48, 3, 107); color: white;" aria-labelledby="Contato">
+  <img src="img/Logo.png" class="img-responsive img-circle margin" style="display:inline" alt="Imagem Logotipo" width="200";>
+  <h1>Contato</h1>
   <br>
   <div class="row slideanim justify-content-center">
       <div class="col-sm-4 col-sm-offset-4 align-items-center">
@@ -187,13 +190,11 @@
 
 
 <!-- Footer -->
-<div class="container-fluid text-center" style="background-color: black; padding: 2px;">
-    <br>
-    <div class="row slideanim">
-        <div class="col-sm-4 col-sm-offset-4">
-            <p class="text-center">Todos os direitos reservados &copy; 2024</p>
- 
-</footer>
+
+  <footer class="container-fluid text-center" style="background-color: black; padding: 0px;">
+     <p class="text-center">Todos os direitos reservados &copy; 2024</p>
+    </footer>
+
 
 </body>
 </html>
