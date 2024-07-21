@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha sua divulgação e passe na frente dos seus concorrentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .form-group .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group .radio-group input {
+            margin-right: 10px;
+        }
+        .form-group .radio-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sua melhor decisão em escolher nossos serviços. Você está a um passo de ser melhor divulgado.</h1>
+        <form id="formularioServico">
+            <div class="form-group">
+                <label for="nome">Qual é seu nome completo?</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Qual é seu melhor email?</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Qual é seu número de telefone?</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Você está interessado em qual dos nossos serviços?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="servico" value="Pacote básico de santinho. R$ 500 por mês. Contém 50 fotos." required>
+                        Pacote básico de santinho. R$ 500 por mês. Contém 50 fotos.
+                    </label>
+                    <label>
+                        <input type="radio" name="servico" value="Pacote intermediário. R$ 1000 por mês. Contém 50 fotos e 50 vídeos.">
+                        Pacote intermediário. R$ 1000 por mês. Contém 50 fotos e 50 vídeos.
+                    </label>
+                    <label>
+                        <input type="radio" name="servico" value="Pacote completo de redes sociais. R$ 1300 por mês. Contém 50 fotos, 50 vídeos, e gerenciamento de redes sociais.">
+                        Pacote completo de redes sociais. R$ 1300 por mês. Contém 50 fotos, 50 vídeos, e gerenciamento de redes sociais.
+                    </label>
+                    <label>
+                        <input type="radio" name="servico" value="Pacote premium. R$ 2000 por mês. Contém 50 fotos, 50 vídeos, gerenciamento de redes sociais, site personalizado com gerenciamento e manutenção.">
+                        Pacote premium. R$ 2000 por mês. Contém 50 fotos, 50 vídeos, gerenciamento de redes sociais, site personalizado com gerenciamento e manutenção.
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Escreva em poucas palavras dúvidas, sugestões ou reclamações (opcional)</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+            </div>
+            <div class="form-group">
+                <p>Clique no botão abaixo para enviar suas respostas no nosso WhatsApp. Revise antes os dados preenchidos. Responderemos apenas se todos os dados estiverem preenchidos.</p>
+                <button type="submit">Enviar Respostas</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('formularioServico').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const servico = document.querySelector('input[name="servico"]:checked').value;
+            const comentarios = document.getElementById('comentarios').value || 'Nenhum';
+
+            const mensagem = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nServiço: ${servico}\nComentários: ${comentarios}`;
+
+            const numeroWhatsApp = '5531989775645';
+            const url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
+
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>
