@@ -1,0 +1,141 @@
+:root {
+    --branca: #ffffff;
+    --cinza-claro: #f2f2f2;
+    --azul-escuro: #1976D2; /* Azul escuro para a marca */
+    --azul-claro: #42A5F5; /* Azul claro para destaques */
+    --cinza-escuro: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
+    color: var(--cinza-escuro);
+    background-color: var(--cinza-claro); /* Fundo cinza claro */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 400; /* Use um peso de fonte normal */
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem; /* Tamanho maior para o h1 */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--branca);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+.navbar-nav li a {
+    color: var(--cinza-escuro);
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.navbar-nav li a:hover {
+    color: var(--azul-claro);
+}
+
+/* Seções */
+.section {
+    padding: 40px 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    color: var(--azul-escuro);
+}
+
+.section-content {
+    /* Estilos para o conteúdo das seções */
+}
+
+/* Quem Somos */
+#Quem-Somos .img-circle {
+    margin: 0 auto 20px;
+    display: block; /* Centralizar a imagem */
+}
+
+/* Nossos Valores */
+#Nossos-Valores p {
+    text-align: justify; /* Justificar o texto */
+}
+
+/* Serviços */
+#Serviços .slideanim {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#Serviços .slideanim.show {
+    opacity: 1;
+}
+
+#Serviços .logo-small {
+    font-size: 3rem;
+    color: var(--azul-escuro);
+}
+
+/* Contato */
+#Contato .social-icon {
+    font-size: 2rem; /* Tamanho menor para os ícones sociais */
+    color: var(--azul-escuro);
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cinza-escuro);
+    color: var(--branca);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsividade (para telas menores) */
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Espaço entre as colunas */
+    }
+
+    .navbar-nav li a {
+        padding: 8px 12px; /* Reduzir o padding */
+    }
+
+    #Serviços .col-sm-4 {
+        margin-bottom: 15px; /* Reduzir a margem inferior */
+    }
+}
