@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PCD-SOCIAL MÍDIA</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><strong>PCD - SOCIAL MÍDIA</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Quem-Somos">Quem Somos</a></li>
+            <li><a href="#Nossos-Valores">Nossos Valores</a></li>
+            <li><a href="#Serviços">Serviços</a></li>
+            <li><a href="#Contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="Quem-Somos" role="region" aria-labelledby="quem-somos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>QUEM SOMOS?</h1>
+          </div>
+          <div class="col-md-6">
+            <img src="img/Logo-pcd.jpg" class="img-responsive img-circle margin" alt="Imagem Logotipo" width="200">
+            <p>A PCD Social Mídia é pioneira como a primeira empresa formada exclusivamente por pessoas com deficiência. Seus membros, todos alunos da escola profissionalizante PCD WEB, são verdadeiros especialistas em marketing digital e indo além, em desenvolvimento (full stack), preparados para atender às demandas do mercado.</p>
+          </div>
+          <div class="col-md-6">
+            <p>No âmbito do marketing digital, a PCD Social Mídia oferece serviços como criação de santinhos digitais, vídeos exclusivos e gerenciamento de páginas nas redes sociais (Instagram, Telegram, Facebook e WhatsApp). Além disso, desenvolvem sites personalizados para empresas de diferentes portes, incluindo comércios em geral e MEIs, abrangendo também comércios digitais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Nossos-Valores" role="region" aria-labelledby="nossos-valores">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>NOSSOS VALORES</h1>
+          </div>
+          <div class="col-md-12">
+            <p>No mundo moderno em que a tecnologia se desenvolve de forma rápida, devemos aprender à acompanhar todas essas mudanças de maneira ágil e eficaz.</p>
+
+            <p>Por isso a PCD - SOCIAL MÍDIA, oferece seus serviços, seus colaboradores, seus equipamentos, conhecimento, e tecnologia; para desenvolver e alavancar o seu sonho, o seu objetivo de vida, sendo esse sonho na política, contribuindo para a nossa sociedade e nosso país.</p>
+
+            <p>Estamos preparados para acolher a todos que necessitam desenvolver seu marketing digital, políticos; grandes, médios, pequenos empresários e MEI. Assim captar recursos que vão sustentar a empresa e seus colaboradores; suprindo todos seus custos e gerando lucros.</p>
+
+            <p>A PCD Social Mídia oferece serviços como criação de santinhos digitais, vídeos exclusivos e gerenciamento de páginas nas redes sociais (Instagram, Telegram, Facebook e WhatsApp). Além disso, desenvolvem sites personalizados para empresas de diferentes portes, incluindo comércios em geral e MEIs, abrangendo também comércios digitais.</p>
+
+            <p>Nossa missão é oferecer o melhor serviços, criando vínculos com nossos clientes. Nossa visão é sermos referencia nacional em marketing político e digital.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Serviços" role="region" aria-labelledby="servicos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>SERVIÇOS</h1>
+          </div>
+          <div class="row slideanim justify-content-center">
+            <div class="col-sm-4" style="margin-bottom: 40px;">
+              <span class="glyphicon glyphicon-user logo-small"></span>
+              <h2 class="text-muted">Santinhos Digitais</h2>
+              <p2>Materiais de campanha digital personalizados, alcançando mais eleitores de forma prática e moderna.</p2>
+            </div>
+
+            <div class="col-sm-4" style="margin-bottom: 40px;">
+              <span class="glyphicon glyphicon-film logo-small"></span>
+              <h2 class="text-muted">Vídeos Exclusivos</h2>
+              <p2>Vídeos profissionais e exclusivos para destacar sua marca e engajar seu público.</p2>
+            </div>
+
+            <div class="col-sm-4" style="margin-bottom: 40px;">
+              <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+              <h2 class="text-muted">Gerenciamento de Redes Sociais</h2>
+              <p2>Amplie sua presença nas redes sociais com postagens estratégicas e interações que fortalecem a conexão com seus seguidores.</p2>
+            </div>
+          </div>
+
+          <div class="row slideanim justify-content-center">
+            <div class="col-sm-4" style="margin-bottom: 40px;">
+              <span class="glyphicon glyphicon-globe logo-small"></span>
+              <h2 class="text-muted">Desenvolvimento de Sites</h2>
+              <p2>Construa um site atraente e funcional, adaptado às necessidades do seu negócio e otimizado para conversões.</p2>
+            </div>
+
+            <div class="col-sm-4" style="margin-bottom: 40px;">
+              <span class="glyphicon glyphicon-pushpin logo-small"></span>
+              <h2 class="text-muted">Criação de Banners</h2>
+              <p2>Atraia a atenção com banners criativos e impactantes para campanhas publicitárias online e offline.</p2>
+            </div>
+
+            <div class="col-sm-4" style="margin-bottom: 40px;">
+              <span class="glyphicon glyphicon-eye-open logo-small"></span>
+              <h2 class="text-muted">Serviço com Acessibilidade</h2>
+              <p2>Oferecemos serviços com acessibilidade, garantindo que todos possam utilizar nossas soluções de forma eficiente e inclusiva.</p2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contato" role="region" aria-labelledby="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img src="img/Logo.png" class="img-responsive img-circle margin" alt="Imagem Logotipo" width="200">
+            <h1>Contato</h1>
+          </div>
+          <div class="col-sm-4 col-sm-offset-4 align-items-center">
+            <p class="text-center"><span class="glyphicon glyphicon-phone"></span>+55 (35) 8854-9488</p>
+            <p class="text-center" style="font-size: 25px;"><span class="glyphicon glyphicon-envelope"></span> pcdsocialmidia@gmail.com</p>
+
+            <a class="social-icon" href="https://www.facebook.com/share/G3zXcAb72hU5Y1MF/?mibextid=qi2Omg">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/pcd_socialmedia?igsh=YzljYTk1ODg3Zg==">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container-fluid text-center">
+    <p>Todos os direitos reservados &copy; 2024</p>
+  </footer>
+
+</body>
+</html>
